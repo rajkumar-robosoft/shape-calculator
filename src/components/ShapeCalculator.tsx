@@ -106,6 +106,9 @@ function ShapeCalculator() {
     setLength(null);
     setWidth(null);
     setDiameter(null);
+    setSide(null);
+    setMajorAxis(null);
+    setMinorAxis(null);
   };
 
   const handleInputData = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -144,6 +147,8 @@ function ShapeCalculator() {
             sWidth={width}
             sDiameter={diameter}
             sSide={side}
+            sMajorAxis={majorAxis}
+            sMinorAxis={minorAxis}
             selectedShape={shape}
             cancel={handleCancel}
           />
